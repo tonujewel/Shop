@@ -14,6 +14,14 @@
 		F115D8082924AC2A007512CB /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D8072924AC2A007512CB /* ShopTests.swift */; };
 		F115D8122924AC2A007512CB /* ShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D8112924AC2A007512CB /* ShopUITests.swift */; };
 		F115D8142924AC2A007512CB /* ShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D8132924AC2A007512CB /* ShopUITestsLaunchTests.swift */; };
+		F115D8212924AC4F007512CB /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D8202924AC4F007512CB /* extension.swift */; };
+		F115D8232924C140007512CB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F115D8222924C140007512CB /* Color.xcassets */; };
+		F115D8262924C98F007512CB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D8252924C98F007512CB /* PrimaryButton.swift */; };
+		F115D8292924D220007512CB /* OnBoardDm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D8282924D220007512CB /* OnBoardDm.swift */; };
+		F115D82C2924EC7E007512CB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D82B2924EC7E007512CB /* HomeScreen.swift */; };
+		F115D82E2924F621007512CB /* HomeDm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D82D2924F621007512CB /* HomeDm.swift */; };
+		F115D8302924FA80007512CB /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D82F2924FA80007512CB /* CategoryItem.swift */; };
+		F115D832292506E3007512CB /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D831292506E3007512CB /* ProductItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		F115D80D2924AC2A007512CB /* ShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F115D8112924AC2A007512CB /* ShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopUITests.swift; sourceTree = "<group>"; };
 		F115D8132924AC2A007512CB /* ShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F115D8202924AC4F007512CB /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		F115D8222924C140007512CB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		F115D8252924C98F007512CB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F115D8282924D220007512CB /* OnBoardDm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardDm.swift; sourceTree = "<group>"; };
+		F115D82B2924EC7E007512CB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F115D82D2924F621007512CB /* HomeDm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDm.swift; sourceTree = "<group>"; };
+		F115D82F2924FA80007512CB /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		F115D831292506E3007512CB /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,15 @@
 		F115D7F52924AC28007512CB /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				F115D82A2924EC6C007512CB /* Screens */,
+				F115D8272924D20D007512CB /* Model */,
+				F115D8242924C975007512CB /* Widgets */,
 				F115D7F62924AC28007512CB /* ShopApp.swift */,
 				F115D7F82924AC28007512CB /* ContentView.swift */,
 				F115D7FA2924AC2A007512CB /* Assets.xcassets */,
 				F115D7FC2924AC2A007512CB /* Preview Content */,
+				F115D8202924AC4F007512CB /* extension.swift */,
+				F115D8222924C140007512CB /* Color.xcassets */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -125,6 +146,33 @@
 				F115D8132924AC2A007512CB /* ShopUITestsLaunchTests.swift */,
 			);
 			path = ShopUITests;
+			sourceTree = "<group>";
+		};
+		F115D8242924C975007512CB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F115D8252924C98F007512CB /* PrimaryButton.swift */,
+				F115D82F2924FA80007512CB /* CategoryItem.swift */,
+				F115D831292506E3007512CB /* ProductItem.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		F115D8272924D20D007512CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F115D8282924D220007512CB /* OnBoardDm.swift */,
+				F115D82D2924F621007512CB /* HomeDm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F115D82A2924EC6C007512CB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F115D82B2924EC7E007512CB /* HomeScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +281,7 @@
 			files = (
 				F115D7FE2924AC2A007512CB /* Preview Assets.xcassets in Resources */,
 				F115D7FB2924AC2A007512CB /* Assets.xcassets in Resources */,
+				F115D8232924C140007512CB /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F115D82E2924F621007512CB /* HomeDm.swift in Sources */,
+				F115D8212924AC4F007512CB /* extension.swift in Sources */,
+				F115D8302924FA80007512CB /* CategoryItem.swift in Sources */,
+				F115D832292506E3007512CB /* ProductItem.swift in Sources */,
 				F115D7F92924AC28007512CB /* ContentView.swift in Sources */,
+				F115D82C2924EC7E007512CB /* HomeScreen.swift in Sources */,
+				F115D8262924C98F007512CB /* PrimaryButton.swift in Sources */,
+				F115D8292924D220007512CB /* OnBoardDm.swift in Sources */,
 				F115D7F72924AC28007512CB /* ShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

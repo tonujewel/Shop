@@ -2,7 +2,7 @@
 //  ShopUITestsLaunchTests.swift
 //  ShopUITests
 //
-//  Created by Singularity - Jewel Rana on 16/11/22.
+//  Created by - Jewel Rana on 16/11/22.
 //
 
 import XCTest
