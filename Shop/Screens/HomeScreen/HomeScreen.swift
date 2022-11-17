@@ -11,11 +11,15 @@ struct HomeScreen: View {
     
     @State var selectedCategory = categoryList[0]
     @Namespace var animation
+    @State var show = false
+    @State var selectedProduct = ProductDm(id: UUID(), title: "Text", tag: "tag", price: "200", image: "shoe_4")
     
     var body: some View {
+        
+        
         ZStack {
             Color("BgColor")
-      
+                .ignoresSafeArea(.all)
             VStack{
                 ScrollView(.vertical,showsIndicators: false,content: {
                     VStack{
@@ -39,14 +43,17 @@ struct HomeScreen: View {
                         
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 0), count: 2),
                                   spacing: 0){
-                            //
-                            
-                            ForEach(productList){product in
-                                
+                                ForEach(productList){product in
                                 ProductItem(productData: product)
-                                    .padding()
+                                        .onTapGesture{
+                                            withAnimation(.easeInOut){
+                                                selectedProduct = product
+                                                show.toggle()
+                                            }
+                                        }
+                                    .padding(10)
                             }
-                        }
+                        }.padding(.horizontal,10)
                         
                     }
                 })
@@ -56,8 +63,8 @@ struct HomeScreen: View {
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeScreen()
-    }
-}
+//struct HomeScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeScreen()
+//    }
+//}

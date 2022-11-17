@@ -22,6 +22,8 @@
 		F115D82E2924F621007512CB /* HomeDm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D82D2924F621007512CB /* HomeDm.swift */; };
 		F115D8302924FA80007512CB /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D82F2924FA80007512CB /* CategoryItem.swift */; };
 		F115D832292506E3007512CB /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115D831292506E3007512CB /* ProductItem.swift */; };
+		F1E187112926359000C66093 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E187102926359000C66093 /* WelcomeScreen.swift */; };
+		F1E187152926398600C66093 /* ProductDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E187142926398600C66093 /* ProductDetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		F115D82D2924F621007512CB /* HomeDm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDm.swift; sourceTree = "<group>"; };
 		F115D82F2924FA80007512CB /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		F115D831292506E3007512CB /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		F1E187102926359000C66093 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		F1E187142926398600C66093 /* ProductDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,9 +174,35 @@
 		F115D82A2924EC6C007512CB /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				F115D82B2924EC7E007512CB /* HomeScreen.swift */,
+				F1E187132926396B00C66093 /* ProductDetails */,
+				F1E187122926383100C66093 /* HomeScreen */,
+				F1E1870F2926354100C66093 /* WelcomeScreen */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		F1E1870F2926354100C66093 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F1E187102926359000C66093 /* WelcomeScreen.swift */,
+			);
+			path = WelcomeScreen;
+			sourceTree = "<group>";
+		};
+		F1E187122926383100C66093 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F115D82B2924EC7E007512CB /* HomeScreen.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		F1E187132926396B00C66093 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F1E187142926398600C66093 /* ProductDetailsScreen.swift */,
+			);
+			path = ProductDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,12 +338,14 @@
 			files = (
 				F115D82E2924F621007512CB /* HomeDm.swift in Sources */,
 				F115D8212924AC4F007512CB /* extension.swift in Sources */,
+				F1E187112926359000C66093 /* WelcomeScreen.swift in Sources */,
 				F115D8302924FA80007512CB /* CategoryItem.swift in Sources */,
 				F115D832292506E3007512CB /* ProductItem.swift in Sources */,
 				F115D7F92924AC28007512CB /* ContentView.swift in Sources */,
 				F115D82C2924EC7E007512CB /* HomeScreen.swift in Sources */,
 				F115D8262924C98F007512CB /* PrimaryButton.swift in Sources */,
 				F115D8292924D220007512CB /* OnBoardDm.swift in Sources */,
+				F1E187152926398600C66093 /* ProductDetailsScreen.swift in Sources */,
 				F115D7F72924AC28007512CB /* ShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shop/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DLX49A58J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -501,6 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shop/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DLX49A58J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
