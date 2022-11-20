@@ -11,7 +11,6 @@ struct HomeScreen: View {
     
     @State var selectedCategory = categoryList[0]
     @Namespace var animation
-    @State var show = false
     @State var selectedProduct = ProductDm(id: UUID(), title: "Text", tag: "tag", price: "200", image: "shoe_4")
     
     var body: some View {
@@ -48,7 +47,7 @@ struct HomeScreen: View {
                                         .onTapGesture{
                                             withAnimation(.easeInOut){
                                                 selectedProduct = product
-                                                show.toggle()
+                                              
                                             }
                                         }
                                     .padding(10)

@@ -14,7 +14,9 @@ struct ContentView: View {
     var body: some View {
         
         VStack{
-          //  ProductDetailsScreen(productData: <#T##Binding<ProductDm>#>, show: <#T##Binding<Bool>#>)
+            
+            WelcomeScreen()
+            
         }
     }
 }
