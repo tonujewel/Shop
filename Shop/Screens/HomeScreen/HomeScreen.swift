@@ -43,13 +43,10 @@ struct HomeScreen: View {
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 0), count: 2),
                                   spacing: 0){
                                 ForEach(productList){product in
-                                ProductItem(productData: product)
-                                        .onTapGesture{
-                                            withAnimation(.easeInOut){
-                                                selectedProduct = product
-                                              
-                                            }
-                                        }
+                                    NavigationLink(destination: ProductDetailsScreen(productData:  product), label: {
+                                        ProductItem(productData: product)
+                                    })
+                                       
                                     .padding(10)
                             }
                         }.padding(.horizontal,10)

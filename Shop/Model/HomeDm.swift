@@ -37,3 +37,11 @@ var productList: [ProductDm] = [
 var categoryList = [
     "Hand bag", "Jewellery","Footwear","Dresses", "Beauty"
 ]
+
+var sizeList = [
+    "38", "40","42","43", "44"
+]
+
+var colorList = [
+    Color.brown, Color.black, Color.gray
+]
